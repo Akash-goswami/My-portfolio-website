@@ -1,0 +1,993 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio Website</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <link rel="stylesheet" href="responsiv.css" />
+  <link rel="stylesheet" href="responsiv2.css" />
+  <link rel="stylesheet" href="responsiv3.css" />
+</head>
+
+<body>
+  <div class="tesmonial-form" id="tesmonial-form">
+    <h1>Hello, Give Your Review❤️</h1>
+    <input type="name" placeholder="Name...." maxlength="20" id="inp1-rew"> <br>
+    <input type="text" name="" placeholder="whats type of work..." maxlength="30" id="inp2-rew"> <br>
+    <textarea name="Massage" cols="30" rows="10" placeholder="Write Your Review"
+      maxlength="250"></textarea> <br>
+    <button id="submit-rew">Submit</button>
+  </div>
+  <div class="contect-pop" title="Fill form">
+    <h1>Hello how can i help You👇</h1>
+    <input type="text" placeholder="Name" required id="inp1-cont"> <br>
+    <input type="email" name="" id="inp2-cont" placeholder="exampl@email.com" required> <br>
+    <textarea name="text" id="" cols="30" rows="10" placeholder="Massage" required></textarea> <br>
+    <button id="submit-contect">Submit</button>
+  </div>
+  <div class="top-navbar">
+    <div class="top-navbar-logo">
+      <img src="img/logo.jpg" alt="" />
+      <span>Sky</span>
+    </div>
+    <div class="top-navbar-manu">
+      <i class="fa-solid fa-bars" id="menu-bars" ></i>
+    </div>
+  </div>
+  <div class="up-arrow-scroll" id="scrollToTopButton" title="scroll">
+    <i class="fa-solid fa-arrow-up" id="scrolRotat"></i>
+  </div>
+  <main>
+    <div class="content">
+      <div class="left-content" id="menu-Slide">
+        <div class="left-content-sticky">
+          <div class="logo-content">
+            <div class="logo">
+              <img src="img/logo.jpg" alt="Logo" class="logo-img" />
+              <span>Sky</span>
+            </div>
+            <div class="time">
+              <span id="real-time"></span>
+            </div>
+          </div>
+          <div class="sidebar-me">
+            <div class="sidebar-me-inner">
+              <div class="img-box">
+                <img src="img/profile.jpg" alt="" width="65px" height="65px" />
+              </div>
+              <div class="sidebar-me-content">
+                <h3>Akash Goswami</h3>
+                <p>Frontent Developer</p>
+                <span><i class="fa-solid fa-location-crosshairs" style="color: #0098e4"></i>
+                  Jaipur-Rajasthan
+                </span>
+              </div>
+            </div>
+          </div>
+          <div class="sidebar-menu">
+            <nav class="menu-list">
+              <ul>
+                <li class="active-menu">
+                  <a href="index.html" target="_blank">
+                    <span class="menu-icon">
+                      <i class="fa-solid fa-house" style="color: #0098e4"></i>
+                    </span>
+                    <span class="menu-list-titel"> Home </span>
+                  </a>
+                </li>
+                <li class="active-menu">
+                  <a href="#project">
+                    <span class="menu-icon">
+                      <span class="material-symbols-outlined" style="color: #0098e4">
+                        grid_view
+                      </span>
+                    </span>
+                    <span class="menu-list-titel"> Projects </span>
+                  </a>
+                </li>
+                <li class="active-menu">
+                  <a href="#about">
+                    <span class="menu-icon">
+                      <i class="fa-solid fa-fingerprint" style="color: #0098e4"></i>
+                    </span>
+                    <span class="menu-list-titel"> About </span>
+                  </a>
+                </li>
+                <li class="active-menu">
+                  <a href="#skill">
+                    <span class="menu-icon">
+                      <i class="fa-solid fa-camera" style="color: #0098e4"></i>
+                    </span>
+                    <span class="menu-list-titel"> Skills </span>
+                  </a>
+                </li>
+                <li class="active-menu">
+                  <a href="#contect">
+                    <span class="menu-icon">
+                      <span class="material-symbols-outlined" style="color: #0098e4">
+                        attach_file
+                      </span>
+                    </span>
+                    <span class="menu-list-titel"> Contact </span>
+                  </a>
+                </li>
+                <li class="active-menu">
+                  <a href="#tutorial">
+                    <span class="menu-icon">
+                      <i class="fa-solid fa-blog" style="color: #0098e4"></i>
+                    </span>
+                    <span class="menu-list-titel"> Tutorial-library </span>
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div class="sidebar-bottom">
+            <div class="sidebar-social-link">
+              <a href="https://www.instagram.com/akas_hgoswami21?igsh=aGExMTgxa2RxYTI4" target="_blank">
+                <i class="fa-brands fa-instagram"></i>
+              </a>
+              <a href="https://www.youtube.com/@Techboy_019" target="_blank">
+                <i class="fa-brands fa-square-youtube"></i>
+              </a>
+              <a href="https://www.linkedin.com/in/akash-goswami-46a878268?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">
+                <i class="fa-brands fa-linkedin"></i>
+              </a>
+              <a href="https://github.com/Akash-goswami" target="_blank">
+                <i class="fa-brands fa-github"></i>
+              </a>
+            </div>
+            <div class="sidebar-copyright">
+              <span><i class="fa-regular fa-copyright"></i> 2024</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="right-content">
+        <div class="right-content-main">
+          <!-- About me  -->
+          <section class="hero-section1" id="about">
+            <div class="hero-contenor1">
+              <div class="hero-row1">
+                <div class="hero-img">
+                  <img src="img/my-img3.jpg" alt="" width="100%" height="100%" />
+                </div>
+                <div class="hero-contenor1-item">
+                  <div class="hero-contenor1-item-top">
+                    <div class="frelance-hero-item">
+                      <a href="https://wa.me/918949055213">
+                        <span class="frelancing-dot1"></span>
+                        <span class="frelancing-dot"> </span>
+                        Available for freelance work
+                      </a>
+                    </div>
+                    <span class="date">
+                      <i class="fa-regular fa-clock"></i>
+                      <span id="real-date"></span>
+                    </span>
+                    <a href="#" class="conect-me"   id="contect-show">
+                      <span> Contect me </span>
+                      <i class="fa-solid fa-arrow-right fa-solid-rotet"></i>
+                    </a>
+                  </div>
+                  <div class="hero-contenor1-item-bottom">
+                    <div class="hero-contenor1-item-bottom-left">
+                      <span>A WEB DEVELOPER</span>
+                      <h1>Akash Goswami 👋🏽</h1>
+                      <p>
+                        👋🏽 Welcome to my portfolio! I'm Akash Goswami, a
+                        passionate frontend developer dedicated to creating
+                        responsive and visually captivating websites.
+                      </p>
+                      <!-- <img src="img/logo.jpg" alt="" width="50px" height="50px"> -->
+                      <button class="download-cv" onclick="downloadDocument()">
+                        Download Cv <i class="fa-solid fa-download"></i>
+                      </button>
+                    </div>
+                    <div class="hero-contenor1-item-bottom-right">
+                      <div class="hero-contenor1-item-bottom-right-top">
+                        <span>Jaipur-Rajasthan</span>
+                        <span class="">
+                          <i class="fa-solid fa-location-crosshairs" style="color: #0098e4"></i>
+                          India
+                        </span>
+                      </div>
+                      <div class="hero-contenor1-item-bottom-right-bottom">
+                        <img src="img/earth1.png" alt="" class="earth-png" />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- about me end  -->
+          <!-- project staart -->
+          <section class="hero-section2" id="project">
+            <div class="hero-contenor2">
+              <div class="project-hero">
+                <a href="#">
+                  <span> Projects </span>
+                  <i class="fa-solid fa-arrow-right fa-solid-rotet"></i>
+                </a>
+                <div class="project-hero-animation-slide">
+                  <div class="project-hero-animation-slide-text">
+                    <ul>
+                      <li>
+                        Welcome to my project showcase! Below, you'll find
+                        some of my recent work in frontend development, web
+                        design. Each project demonstrates my passion for
+                        innovation and creativity.
+                      </li>
+                      <li>
+                        Welcome to my project showcase! Below, you'll find
+                        some of my recent work in frontend development, web
+                        design. Each project demonstrates my passion for
+                        innovation and creativity.
+                      </li>
+                      <li>
+                        Welcome to my project showcase! Below, you'll find
+                        some of my recent work in frontend development, web
+                        design. Each project demonstrates my passion for
+                        innovation and creativity.
+                      </li>
+                      <li>
+                        Welcome to my project showcase! Below, you'll find
+                        some of my recent work in frontend development, web
+                        design. Each project demonstrates my passion for
+                        innovation and creativity.
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="project-hero-slide-btn">
+                  <div class="right-slide-perojext-btn">
+                    <i class="fa-solid fa-chevron-right"></i>
+                  </div>
+                  <div class="left-slide-perojext-btn">
+                    <i class="fa-solid fa-chevron-left"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="project-hero-imges-contenor">
+                <div class="project-hero-imges-boxes">
+                  <div class="project-hero-imges-cont">
+                    <div class="project-hero-imges">
+                      <img src="img/prj1.png" alt="" width="100%" height="100%" />
+                      <!-- <span class="project-hero-imges-year">
+                                                <span>2024</span>
+                                                <span>2024</span>
+                                            </span> -->
+                    </div>
+                    <div class="project-hero-name-ditel">
+                      <div class="project-hero-name">
+                        <h3>Modling Website</h3>
+                        <p>Frontent Development</p>
+                      </div>
+                      <div>
+                        <div class="left-slide-perojext-btn">
+                          <i class="fa-solid fa-chevron-right"></i>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="project-hero-imges-cont">
+                    <div class="project-hero-imges">
+                      <img src="img/prj2.png" alt="" width="100%" height="100%" />
+                      <!-- <span class="project-hero-imges-year">
+                                                <span>2024</span>
+                                                <span>2024</span>
+                                            </span> -->
+                    </div>
+                    <div class="project-hero-name-ditel">
+                      <div class="project-hero-name">
+                        <h3>Club Website</h3>
+                        <p>Frontend Development</p>
+                      </div>
+                      <div>
+                        <div class="left-slide-perojext-btn">
+                          <i class="fa-solid fa-chevron-right"></i>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="project-hero-imges-boxes">
+                  <div class="project-hero-imges-cont">
+                    <div class="project-hero-imges">
+                      <img src="img/prj4.png" alt="" width="100%" height="100%" />
+                      <!-- <span class="project-hero-imges-year">
+                                                <span>2024</span>
+                                                <span>2024</span>
+                                            </span> -->
+                    </div>
+                    <div class="project-hero-name-ditel">
+                      <div class="project-hero-name">
+                        <h3>Facbook NewsRoom</h3>
+                        <p>Ux Clone</p>
+                      </div>
+                      <div>
+                        <div class="left-slide-perojext-btn">
+                          <i class="fa-solid fa-chevron-right"></i>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="project-hero-imges-cont">
+                    <div class="project-hero-imges">
+                      <img src="img/prj7.png" alt="" width="100%" height="100%" />
+                      <!-- <span class="project-hero-imges-year">
+                                                <span>2024</span>
+                                                <span>2024</span>
+                                            </span> -->
+                    </div>
+                    <div class="project-hero-name-ditel">
+                      <div class="project-hero-name">
+                        <h3>SmartPhone Website</h3>
+                        <p>Frontend Development</p>
+                      </div>
+                      <div>
+                        <div class="left-slide-perojext-btn">
+                          <i class="fa-solid fa-chevron-right"></i>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="project-hero-imges-boxes">
+                  <div class="project-hero-imges-cont">
+                    <div class="project-hero-imges">
+                      <img src="img/prj2.2.png" alt="" width="100%" height="100%" />
+                      <!-- <span class="project-hero-imges-year">
+                                                <span>2024</span>
+                                                <span>2024</span>
+                                            </span> -->
+                    </div>
+                    <div class="project-hero-name-ditel">
+                      <div class="project-hero-name">
+                        <h3>Music Website for club</h3>
+                        <p>Frontend Development</p>
+                      </div>
+                      <div>
+                        <div class="left-slide-perojext-btn">
+                          <i class="fa-solid fa-chevron-right"></i>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="project-hero-imges-cont">
+                    <div class="project-hero-imges">
+                      <img src="img/prj8.png" alt="" width="100%" height="100%" />
+                      <!-- <span class="project-hero-imges-year">
+                                                <span>2024</span>
+                                                <span>2024</span>
+                                            </span> -->
+                    </div>
+                    <div class="project-hero-name-ditel">
+                      <div class="project-hero-name">
+                        <h3>Spotify Clone(Freelanceing Project)</h3>
+                        <p>Frontend Devlopment</p>
+                      </div>
+                      <div>
+                        <div class="left-slide-perojext-btn">
+                          <i class="fa-solid fa-chevron-right"></i>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="project-hero-imges-boxes">
+                  <div class="project-hero-imges-cont">
+                    <div class="project-hero-imges">
+                      <img src="img/prj3.png" alt="" width="100%" height="100%" />
+                      <!-- <span class="project-hero-imges-year">
+                                                <span>2024</span>
+                                                <span>2024</span>
+                                            </span> -->
+                    </div>
+                    <div class="project-hero-name-ditel">
+                      <div class="project-hero-name">
+                        <h3>Swiggy Website</h3>
+                        <p>UI Clone</p>
+                      </div>
+                      <div>
+                        <div class="left-slide-perojext-btn">
+                          <i class="fa-solid fa-chevron-right"></i>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="project-hero-imges-cont">
+                    <div class="project-hero-imges">
+                      <img src="img/prj9.png" alt="" width="100%" height="100%" />
+                      <!-- <span class="project-hero-imges-year">
+                                                <span>2024</span>
+                                                <span>2024</span>
+                                            </span> -->
+                    </div>
+                    <div class="project-hero-name-ditel">
+                      <div class="project-hero-name">
+                        <h3>Home decoration Website</h3>
+                        <p>Frontend Devlopment</p>
+                      </div>
+                      <div>
+                        <div class="left-slide-perojext-btn">
+                          <i class="fa-solid fa-chevron-right"></i>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="project-hero-imges-boxes">
+                  <div class="project-hero-imges-cont">
+                    <div class="project-hero-imges">
+                      <img src="img/prj5.png" alt="" width="100%" height="100%" />
+                      <!-- <span class="project-hero-imges-year">
+                                                <span>2024</span>
+                                                <span>2024</span>
+                                            </span> -->
+                    </div>
+                    <div class="project-hero-name-ditel">
+                      <div class="project-hero-name">
+                        <h3>WsCube tech Website</h3>
+                        <p>UI clone (Coching task)</p>
+                      </div>
+                      <div>
+                        <div class="left-slide-perojext-btn">
+                          <i class="fa-solid fa-chevron-right"></i>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="project-hero-imges-cont">
+                    <div class="project-hero-imges">
+                      <img src="img/prj6.png" alt="" width="100%" height="100%" />
+                      <!-- <span class="project-hero-imges-year">
+                                                <span>2024</span>
+                                                <span>2024</span>
+                                            </span> -->
+                    </div>
+                    <div class="project-hero-name-ditel">
+                      <div class="project-hero-name">
+                        <h3>WsCube Tech website</h3>
+                        <p>UI Clone(Coching task)</p>
+                      </div>
+                      <div>
+                        <div class="left-slide-perojext-btn">
+                          <i class="fa-solid fa-chevron-right"></i>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="project-hero-imges-boxes">
+                  <div class="project-hero-imges-cont">
+                    <div class="project-hero-imges">
+                      <img src="img/prj5.1.png" alt="" width="100%" height="100%" class="comming-soon-projects" />
+                      <!-- <span class="project-hero-imges-year">
+                                                <span>2024</span>
+                                                <span>2024</span>
+                                            </span> -->
+                    </div>
+                    <div class="project-hero-name-ditel">
+                      <div class="project-hero-name">
+                        <h3>Coming Soon..</h3>
+                        <p>Frontend Devlopment</p>
+                      </div>
+                      <div>
+                        <div class="left-slide-perojext-btn">
+                          <i class="fa-solid fa-chevron-right"></i>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="project-hero-imges-cont">
+                    <div class="project-hero-imges">
+                      <img src="img/prj6.2.png" alt="" width="100%" height="100%" class="comming-soon-projects" />
+                      <!-- <span class="project-hero-imges-year">
+                                                <span>2024</span>
+                                                <span>2024</span>
+                                            </span> -->
+                    </div>
+                    <div class="project-hero-name-ditel">
+                      <div class="project-hero-name">
+                        <h3>Coming Soon..</h3>
+                        <p>Frontend Devlopment</p>
+                      </div>
+                      <div>
+                        <div class="left-slide-perojext-btn">
+                          <i class="fa-solid fa-chevron-right"></i>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- project end -->
+          <!-- complit prject list start -->
+          <section class="hero-section3">
+            <div class="project-hero-complit-list">
+              <div class="number-of-project">
+                <span class="numBox" data-count="3">00</span>
+                <p>Months of experience</p>
+              </div>
+              <div class="number-of-project">
+                <span class="numBox" data-count="10">00</span>
+                <p>Completed Projects</p>
+              </div>
+              <div class="number-of-project">
+                <span class="numBox" data-count="1">00</span>
+                <p>Freelanceing Project</p>
+              </div>
+            </div>
+          </section>
+          <!-- complit prject list end -->
+          <!-- education and experience section start  -->
+          <section class="hero-section4" id="skill">
+            <div class="education-section-hero">
+              <div class="eduction-hero">
+                <h4>Education</h4>
+                <div class="skills-hero-education">
+                  <div class="skills-hero-education-img">
+                    <img src="img/shubhod.logo.png" alt="" width="100px" height="100px" />
+                  </div>
+                  <div class="year-education-hero">
+                    <span>2020-2023</span>
+                    <h3><a href="#"> Bachelor's Degree </a></h3>
+                    <p>
+                      S.S. Jain Subodh College of Global
+                      Excellence,Jaipur-Rajasthan
+                    </p>
+                  </div>
+                </div>
+                <div class="skills-hero-education">
+                  <div class="skills-hero-education-img">
+                    <img src="img/wscubtech.logo.webp" alt="" width="100px" height="100px" />
+                  </div>
+                  <div class="year-education-hero">
+                    <span>2024-Present </span>
+                    <h3><a href="#"> Mern Stack Development </a></h3>
+                    <p>WsCube tech ,Jaipur-Rajasthan</p>
+                  </div>
+                </div>
+                <div class="skills-hero-education">
+                  <div class="skills-hero-education-img">
+                    <img src="img/apna-clg.logo.png" alt="" width="100px" height="100px" />
+                  </div>
+                  <div class="year-education-hero">
+                    <span>2024-Present</span>
+                    <h3><a href="#"> Java & Dsa </a></h3>
+                    <p>Apna College ,Youtub</p>
+                  </div>
+                </div>
+              </div>
+              <div class="experience-hero">
+                <div class="eduction-hero">
+                  <h4>My Skills</h4>
+                  <div class="skills-hero-education">
+                    <div class="skills-hero-education-img">
+                      <img src="img/js.logo.png" alt="" width="100px" height="100px" />
+                    </div>
+                    <div class="year-education-hero">
+                      <span>100%</span>
+                      <h3><a href="#"> Html , Css & JavaScript </a></h3>
+                      <p>Frontent Development , Responsive Website</p>
+                    </div>
+                  </div>
+                  <div class="skills-hero-education">
+                    <div class="skills-hero-education-img">
+                      <img src="img/Java-Logo.png" alt="" width="120px" height="120px" />
+                    </div>
+                    <div class="year-education-hero">
+                      <span>40%</span>
+                      <h3><a href="#"> Java </a></h3>
+                      <p>Currently learning more concepts</p>
+                    </div>
+                  </div>
+                  <div class="skills-hero-education">
+                    <div class="skills-hero-education-img">
+                      <img src="img/figma.logo.webp" alt="" width="100px" height="100px" />
+                    </div>
+                    <div class="year-education-hero">
+                      <span>30%</span>
+                      <h3><a href="#"> Figma </a></h3>
+                      <p>Currently learning more Ui Designs</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- education and experience section end -->
+          <!-- my servises page start  -->
+          <section class="hero-section5">
+            <div class="hero-contenor5">
+              <div class="project-hero services-hero-row">
+                <a href="#">
+                  <span> Services </span>
+                </a>
+                <div class="project-hero-animation-slide services-hero-text-slide">
+                  <div class="project-hero-animation-slide-text services-hero-text">
+                    <ul>
+                      <li>
+                        ⌘ Click the image above to dive into my class
+                        tutorials! Learn valuable skills and techniques in web
+                        development, design, and more. Enhance your knowledge
+                        and take your projects to the next level with my
+                        engaging tutorials. ⌘
+                      </li>
+                      <li>
+                        Click the image above to dive into my class tutorials!
+                        Learn valuable skills and techniques in web
+                        development, design, and more. Enhance your knowledge
+                        and take your projects to the next level with my
+                        engaging tutorials. ⌘
+                      </li>
+                      <li>
+                        Click the image above to dive into my class tutorials!
+                        Learn valuable skills and techniques in web
+                        development, design, and more. Enhance your knowledge
+                        and take your projects to the next level with my
+                        engaging tutorials.⌘
+                      </li>
+                      <li>
+                        Click the image above to dive into my class tutorials!
+                        Learn valuable skills and techniques in web
+                        development, design, and more. Enhance your knowledge
+                        and take your projects to the next level with my
+                        engaging tutorials.⌘
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="all-services-ditels">
+                <div class="servises-box">
+                  <a href="" class="servises-box-overlay"> </a>
+                  <h3>
+                    <a href="#" class="servises-link">
+                      Responsive Web Design
+                    </a>
+                  </h3>
+                  <p>
+                    Specializing in Responsive Web Design, creating seamless
+                    user experiences <br />
+                    across all devices with fluid grids and flexible layouts.
+                  </p>
+                  <!-- <span>01 Project</span> -->
+                  <div class="servises-box-icon">
+                    <i class="fa-brands fa-wpressr"></i>
+                  </div>
+                </div>
+                <div class="servises-box">
+                  <a href="" class="servises-box-overlay"> </a>
+                  <h3>
+                    <a href="#" class="servises-link">
+                      Frontend development
+                    </a>
+                  </h3>
+                  <p>
+                    Hello there! I specialize in frontend development using
+                    HTML, CSS, and JavaScript to create dynamic and
+                    user-friendly websites. Whether you need a modern redesign
+                    or a brand-new website, I can bring your ideas to life
+                    with clean code and responsive design. Let's collaborate
+                    and build something amazing together!
+                  </p>
+                  <!-- <span>01 Project</span> -->
+                  <div class="servises-box-icon">
+                    <i class="fa-brands fa-wpressr"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- my servises page end  -->
+          <!-- testmonial section start  -->
+          <section class="hero-contenor7">
+
+            <div class="my-clint-reviw">
+              <!-- <div class="tesmonial-form" id="tesmonial-form">
+                <h1>Hello, Give Your Review❤️</h1>
+                <input type="name" placeholder="Name...." maxlength="20" <br>
+                <input type="text" name="" id="" placeholder="whats type of work..." maxlength="30"> <br>
+                <textarea name="Massage" id="" cols="30" rows="10" placeholder="Write Your Review"
+                  maxlength="250"></textarea> <br>
+                <button>Submit</button>
+              </div> -->
+              <div class="project-hero services-hero-row">
+                <a href="#">
+                  <span> Testimonial </span>
+                </a>
+                <div class="project-hero-animation-slide services-hero-text-slide">
+                  <div class="project-hero-animation-slide-text services-hero-text">
+                    <ul>
+                      <li>
+                        Discover why clients love working with us! Read what
+                        they have to say about our exceptional services.👇
+                      </li>
+                      <li>
+                        Discover why clients love working with us! Read what
+                        they have to say about our exceptional services.👇
+                      </li>
+                      <li>
+                        Discover why clients love working with us! Read what
+                        they have to say about our exceptional services.👇
+                      </li>
+                      <li>
+                        Discover why clients love working with us! Read what
+                        they have to say about our exceptional services.👇
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="creat-btn-rew" id="creat-rewiu-box">
+                <i class="fa-solid fa-plus"></i>
+              </div>
+              <div class="clint-reviw-item" id="clint-box">
+
+                <div class="clint-reviw-item-top">
+                  <div class="clint-gain-logo">
+                    <img src="img/logo.jpg" alt="" width="100%" height="100%" />
+                  </div>
+                  <div class="clint-img">
+                    <img src="img/clint-img1.png" alt="" width="100%" height="100%" />
+                  </div>
+                </div>
+                <div class="icon-clint-box">
+                  <i class="fa-regular fa-handshake"></i>
+                </div>
+                <p>
+                  “"Akash's frontend work on our Spotify-like project was
+                  exceptional. He brought our vision to life with stunning
+                  design and seamless functionality. Highly recommended!".
+                </p>
+                <h4 class="clint-name">Khushi</h4>
+                <span class="clint-skills">Freelancing Project</span>
+              </div>
+            </div>
+          </section>
+          <!-- testmonial section end  -->
+          <!-- tutorial library start  -->
+          <section class="hero-contenor8" id="tutorial">
+            <div class="tutorial-library">
+              <div class="project-hero youtub-nav">
+                <a href="#">
+                  <span> Youtub👇 </span>
+                </a>
+                <div class="project-hero-animation-slide">
+                  <div class="project-hero-animation-slide-text">
+                    <ul>
+                      <li>
+                        ⌘ It is a long established fact that a reader will
+                        distracted by the readable content of a page when
+                        looking an its readable ⌘
+                      </li>
+                      <li>
+                        It is a long established fact that a reader will
+                        distracted by the readable content of a page when
+                        looking an its readable ⌘
+                      </li>
+                      <li>
+                        It is a long established fact that a reader will
+                        distracted by the readable content of a page when
+                        looking an its readable ⌘
+                      </li>
+                      <li>
+                        It is a long established fact that a reader will
+                        distracted by the readable content of a page when
+                        looking an its readable ⌘
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="project-hero-slide-btn">
+                  <div class="right-slide-perojext-btn">
+                    <i class="fa-solid fa-chevron-right"></i>
+                  </div>
+                  <div class="left-slide-perojext-btn">
+                    <i class="fa-solid fa-chevron-left"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="youtub-poster">
+                <div class="project-hero-imges-cont">
+                  <div class="project-hero-imges">
+                    <img src="img/loop-class.png" alt="" width="100%" height="100%" />
+                    <!-- <span class="project-hero-imges-year">
+                                            <span>2024</span>
+                                            <span>2024</span>
+                                        </span> -->
+                  </div>
+                  <div class="project-hero-name-ditel">
+                    <div class="project-hero-name">
+                      <h3>Loops class</h3>
+                      <p>JavaScript Click and see 👆</p>
+                    </div>
+                    <div>
+                      <div class="left-slide-perojext-btn">
+                        <i class="fa-solid fa-chevron-right"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="project-hero-imges-cont">
+                  <div class="project-hero-imges">
+                    <img src="img/intro-dection.png" alt="" width="100%" height="100%" />
+                    <!-- <span class="project-hero-imges-year">
+                                            <span>2024</span>
+                                            <span>2024</span>
+                                        </span> -->
+                  </div>
+                  <div class="project-hero-name-ditel">
+                    <div class="project-hero-name">
+                      <h3>Introduction</h3>
+                      <p>This is My Introduction Vlog</p>
+                    </div>
+                    <div>
+                      <div class="left-slide-perojext-btn">
+                        <i class="fa-solid fa-chevron-right"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="project-hero-imges-cont">
+                  <div class="project-hero-imges">
+                    <img src="img/Meet-new-freind.png" alt="" width="100%" height="100%" />
+                    <!-- <span class="project-hero-imges-year">
+                                            <span>2024</span>
+                                            <span>2024</span>
+                                        </span> -->
+                  </div>
+                  <div class="project-hero-name-ditel">
+                    <div class="project-hero-name">
+                      <h3>Podcast</h3>
+                      <p>See My Podcast Playlist</p>
+                    </div>
+                    <div>
+                      <div class="left-slide-perojext-btn">
+                        <i class="fa-solid fa-chevron-right"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="project-hero-imges-cont">
+                  <div class="project-hero-imges">
+                    <img src="img/youtub.png" alt="" width="100%" height="100%" class="comming-soon-projects" />
+                    <!-- <span class="project-hero-imges-year">
+                                            <span>2024</span>
+                                            <span>2024</span>
+                                        </span> -->
+                  </div>
+                  <div class="project-hero-name-ditel">
+                    <div class="project-hero-name">
+                      <h3>Coming Soon</h3>
+                      <p>Restart My Joureny</p>
+                    </div>
+                    <div>
+                      <div class="left-slide-perojext-btn">
+                        <i class="fa-solid fa-chevron-right"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- tutorial library end -->
+          <!-- contect section start  -->
+          <section class="hero-contenor9" id="contect">
+            <div class="contect-hero">
+              <div class="project-hero services-hero-row">
+                <a href="#">
+                  <span> Contect </span>
+                </a>
+                <div class="project-hero-animation-slide services-hero-text-slide">
+                  <div class="project-hero-animation-slide-text services-hero-text">
+                    <ul>
+                      <li>
+                        ⌘ Complete the form to send your message—I'll
+                        definitely get in touch with you! Let's connect and
+                        discuss how I can assist you with your project or
+                        answer any inquiries you have. ⌘
+                      </li>
+                      <li>
+                        Complete the form to send your message—I'll definitely
+                        get in touch with you! Let's connect and discuss how I
+                        can assist you with your project or answer any
+                        inquiries you have.⌘
+                      </li>
+                      <li>
+                        Complete the form to send your message—I'll definitely
+                        get in touch with you! Let's connect and discuss how I
+                        can assist you with your project or answer any
+                        inquiries you have. ⌘
+                      </li>
+                      <li>
+                        Complete the form to send your message—I'll definitely
+                        get in touch with you! Let's connect and discuss how I
+                        can assist you with your project or answer any
+                        inquiries you have. ⌘
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="conect-form">
+                <div class="contect-submit">
+                  <form action="">
+                    <input type="text" placeholder="Name" id="nameInp" />
+                    <br />
+                    <input type="email" placeholder="Email" required id="emailInp" />
+                    <br />
+                    <textarea name="" id="textareaInp" cols="30" rows="10" placeholder="Massage"></textarea>
+                    <br />
+                    <button class="submit-btn" id="submit-btn">Submit</button>
+                  </form>
+                </div>
+                <div class="contect-addrase">
+                  <a href="#">
+                    <span> Address </span>
+                  </a>
+                  <div class="ad-contect">
+                    <div class="top-ad-contect">
+                      <div class="top-ad-contect-icon">
+                        <i class="fa-regular fa-map"></i>
+                      </div>
+                      <div class="top-ad-contect-titel">
+                        <h3>Visit Me</h3>
+                        <p>Shiddharth Nager Nera-International Airport</p>
+                        <span>Jaipur-Rajasthan</span>
+                      </div>
+                      <div class="ad-border1"></div>
+                    </div>
+                    <div class="top-ad-contect">
+                      <div class="top-ad-contect-icon">
+                        <i class="fa-regular fa-envelope"></i>
+                      </div>
+                      <div class="top-ad-contect-titel">
+                        <h3>Contact Info</h3>
+                        <p>agg99011@gmail.com</p>
+                      </div>
+                      <div class="ad-border2"></div>
+                    </div>
+                    <!-- <div class="bottom-ad-contect">
+                                            <div></div>
+                                            <div></div>
+                                        </div> -->
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- contect section end -->
+          <!-- foter  -->
+          <footer>
+            <div>© 2024 Code W☘️th Sky. All rights reserved.</div>
+          </footer>
+          <!-- foter  -->
+        </div>
+      </div>
+    </div>
+  </main>
+  <script src="downlodCv.js"></script>
+  <script src="ContectData.js"></script>
+  <script src="pnI.js"></script>
+  <script src="menu-open.js"></script>
+  <script src="upSclrol.js"></script>
+  <script src="contect-pop.js"></script>
+  <script src="time.js"></script>
+  <script src="rewi-box.js"></script>
+</body>
+
+</html>

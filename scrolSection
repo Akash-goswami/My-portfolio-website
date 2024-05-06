@@ -1,0 +1,26 @@
+document.addEventListener('DOMContentLoaded', function() {
+    const navLinks = document.querySelectorAll('.active-menu a');
+
+    // Loop through each navigation link
+    navLinks.forEach(link => {
+        // Add click event listener to each link
+        link.addEventListener('click', function(e) {
+            e.preventDefault();
+
+            const targetId = this.getAttribute('href');
+            const targetSection = document.querySelector(targetId);
+
+            if (targetSection) {
+                // Check viewport width to decide scrolling behavior
+                const isSmallScreen = window.innerWidth <= 768;
+
+                // Use appropriate scrolling behavior based on screen size
+                targetSection.scrollIntoView({
+                    behavior: isSmallScreen ? 'auto' : 'smooth'
+                });
+            } else {
+                console.error('Target section not found:', targetId);
+            }
+        });
+    });
+});
