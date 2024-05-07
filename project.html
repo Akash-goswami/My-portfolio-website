@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" type="text/css"
+        href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+    <link rel="stylesheet" href="responsiv.css" />
+    <link rel="stylesheet" href="responsiv2.css" />
+    <link rel="stylesheet" href="responsiv3.css" />
+</head>
+
+<body>
+    <div class="tesmonial-form" id="tesmonial-form">
+        <h1>Hello, Give Your Review❤️</h1>
+        <input type="name" placeholder="Name...." maxlength="20" id="inp1-rew"> <br>
+        <input type="text" name="" placeholder="whats type of work..." maxlength="30" id="inp2-rew"> <br>
+        <textarea name="Massage" cols="30" rows="10" placeholder="Write Your Review" maxlength="250"></textarea> <br>
+        <button id="submit-rew">Submit</button>
+    </div>
+    <div class="contect-pop" title="Fill form">
+        <h1>Hello how can i help You👇</h1>
+        <input type="text" placeholder="Name" required id="inp1-cont"> <br>
+        <input type="email" name="" id="inp2-cont" placeholder="exampl@email.com" required> <br>
+        <textarea name="text" id="" cols="30" rows="10" placeholder="Massage" required></textarea> <br>
+        <button id="submit-contect">Submit</button>
+    </div>
+    <div class="top-navbar">
+        <div class="top-navbar-logo">
+            <img src="img/logo.jpg" alt="" />
+            <span>Sky</span>
+        </div>
+        <div class="top-navbar-manu">
+            <i class="fa-solid fa-bars" id="menu-bars"></i>
+        </div>
+    </div>
+    <div class="up-arrow-scroll" id="scrollToTopButton" title="scroll">
+        <i class="fa-solid fa-arrow-up" id="scrolRotat"></i>
+    </div>
+    <main>
+        <div class="content">
+            <div class="left-content" id="menu-Slide">
+                <div class="left-content-sticky">
+                    <div class="logo-content">
+                        <div class="logo">
+                            <img src="img/logo.jpg" alt="Logo" class="logo-img" />
+                            <span>Sky</span>
+                        </div>
+                        <div class="time">
+                            <span id="real-time"></span>
+                        </div>
+                    </div>
+                    <div class="sidebar-me">
+                        <div class="sidebar-me-inner">
+                            <div class="img-box">
+                                <img src="img/profile.jpg" alt="" width="65px" height="65px" />
+                            </div>
+                            <div class="sidebar-me-content">
+                                <h3>Akash Goswami</h3>
+                                <p>Frontent Developer</p>
+                                <span><i class="fa-solid fa-location-crosshairs" style="color: #0098e4"></i>
+                                    Jaipur-Rajasthan
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sidebar-menu">
+                        <nav class="menu-list">
+                            <ul>
+                                <li class="active-menu">
+                                    <a href="index.html" target="_blank">
+                                        <span class="menu-icon">
+                                            <i class="fa-solid fa-house" style="color: #0098e4"></i>
+                                        </span>
+                                        <span class="menu-list-titel"> Home </span>
+                                    </a>
+                                </li>
+                                <li class="active-menu">
+                                    <a href="#project">
+                                        <span class="menu-icon">
+                                            <span class="material-symbols-outlined" style="color: #0098e4">
+                                                grid_view
+                                            </span>
+                                        </span>
+                                        <span class="menu-list-titel"> Projects </span>
+                                    </a>
+                                </li>
+                                <li class="active-menu">
+                                    <a href="#about">
+                                        <span class="menu-icon">
+                                            <i class="fa-solid fa-fingerprint" style="color: #0098e4"></i>
+                                        </span>
+                                        <span class="menu-list-titel"> About </span>
+                                    </a>
+                                </li>
+                                <li class="active-menu">
+                                    <a href="#skill">
+                                        <span class="menu-icon">
+                                            <i class="fa-solid fa-camera" style="color: #0098e4"></i>
+                                        </span>
+                                        <span class="menu-list-titel"> Skills </span>
+                                    </a>
+                                </li>
+                                <li class="active-menu">
+                                    <a href="#contect">
+                                        <span class="menu-icon">
+                                            <span class="material-symbols-outlined" style="color: #0098e4">
+                                                attach_file
+                                            </span>
+                                        </span>
+                                        <span class="menu-list-titel"> Contact </span>
+                                    </a>
+                                </li>
+                                <li class="active-menu">
+                                    <a href="#tutorial">
+                                        <span class="menu-icon">
+                                            <i class="fa-solid fa-blog" style="color: #0098e4"></i>
+                                        </span>
+                                        <span class="menu-list-titel"> Tutorial-library </span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="sidebar-bottom">
+                        <div class="sidebar-social-link">
+                            <a href="https://www.instagram.com/akas_hgoswami21?igsh=aGExMTgxa2RxYTI4" target="_blank">
+                                <i class="fa-brands fa-instagram"></i>
+                            </a>
+                            <a href="https://www.youtube.com/@Techboy_019" target="_blank">
+                                <i class="fa-brands fa-square-youtube"></i>
+                            </a>
+                            <a href="https://www.linkedin.com/in/akash-goswami-46a878268?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+                                target="_blank">
+                                <i class="fa-brands fa-linkedin"></i>
+                            </a>
+                            <a href="https://github.com/Akash-goswami" target="_blank">
+                                <i class="fa-brands fa-github"></i>
+                            </a>
+                        </div>
+                        <div class="sidebar-copyright">
+                            <span><i class="fa-regular fa-copyright"></i> 2024</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="right-content">
+                <div class="right-content-main">
+                    <!-- About me  -->
+                    <!-- about me end  -->
+                    <!-- project staart -->
+                    <section class="hero-section2 project-contenor2" id="project">
+                        <div class=" project-contenor2">
+                            <div class="project-hero">
+                                <a href="#">
+                                    <span> Projects </span>
+                                    <i class="fa-solid fa-arrow-right fa-solid-rotet"></i>
+                                </a>
+                                <div class="project-hero-animation-slide">
+                                    <div class="project-hero-animation-slide-text">
+                                        <ul>
+                                            <li>
+                                                Welcome to my project showcase! Below, you'll find
+                                                some of my recent work in frontend development, web
+                                                design. Each project demonstrates my passion for
+                                                innovation and creativity.
+                                            </li>
+                                            <li>
+                                                Welcome to my project showcase! Below, you'll find
+                                                some of my recent work in frontend development, web
+                                                design. Each project demonstrates my passion for
+                                                innovation and creativity.
+                                            </li>
+                                            <li>
+                                                Welcome to my project showcase! Below, you'll find
+                                                some of my recent work in frontend development, web
+                                                design. Each project demonstrates my passion for
+                                                innovation and creativity.
+                                            </li>
+                                            <li>
+                                                Welcome to my project showcase! Below, you'll find
+                                                some of my recent work in frontend development, web
+                                                design. Each project demonstrates my passion for
+                                                innovation and creativity.
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="project-hero-slide-btn">
+                                    <div class="right-slide-perojext-btn">
+                                        <i class="fa-solid fa-chevron-right"></i>
+                                    </div>
+                                    <div class="left-slide-perojext-btn">
+                                        <i class="fa-solid fa-chevron-left"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class=" project-cont">
+                                <div class="project-cont1">
+                                    <h1>Freelancing project</h1>
+                                </div>
+                                <div class="slides">
+                                    <div>
+                                        <img src="img/prj8.png" alt="">
+                                        <h1>Spotify Website</h1>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis iusto id
+                                            quam praesentium vitae quasi, commodi, culpa reprehenderit quae aperiam
+                                            earum debitis nemo eveniet mollitia voluptate. Corporis ipsum veniam
+                                            perspiciatis.</p>
+                                    </div>
+
+                                    <div><img src="img/prj2.png" alt="">
+                                        <h1>hello</h1>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis iusto id
+                                            quam praesentium vitae quasi, commodi, culpa reprehenderit quae aperiam
+                                            earum debitis nemo eveniet mollitia voluptate. Corporis ipsum veniam
+                                            perspiciatis.</p>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class=" project-cont">
+                                <div class="project-cont1 JavaScript-project-cont1">
+                                    <h1>JavaScript Projects</h1>
+                                </div>
+                                <div class="slides">
+                                    <div>
+                                        <img src="img/prj8.png" alt="">
+                                        <h1>Spotify Website</h1>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis iusto id
+                                            quam praesentium vitae quasi, commodi, culpa reprehenderit quae aperiam
+                                            earum debitis nemo eveniet mollitia voluptate. Corporis ipsum veniam
+                                            perspiciatis.</p>
+                                    </div>
+
+                                    <div><img src="img/prj2.png" alt="">
+                                        <h1>hello</h1>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis iusto id
+                                            quam praesentium vitae quasi, commodi, culpa reprehenderit quae aperiam
+                                            earum debitis nemo eveniet mollitia voluptate. Corporis ipsum veniam
+                                            perspiciatis.</p>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class=" project-cont">
+                                <div class="project-cont1 Bootstarap-project-cont1">
+                                    <h1>Bootstarap Projects</h1>
+                                </div>
+                                <div class="slides">
+                                    <div>
+                                        <img src="img/prj8.png" alt="">
+                                        <h1>Spotify Website</h1>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis iusto id
+                                            quam praesentium vitae quasi, commodi, culpa reprehenderit quae aperiam
+                                            earum debitis nemo eveniet mollitia voluptate. Corporis ipsum veniam
+                                            perspiciatis.</p>
+                                    </div>
+
+                                    <div><img src="img/prj2.png" alt="">
+                                        <h1>hello</h1>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis iusto id
+                                            quam praesentium vitae quasi, commodi, culpa reprehenderit quae aperiam
+                                            earum debitis nemo eveniet mollitia voluptate. Corporis ipsum veniam
+                                            perspiciatis.</p>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class=" project-cont">
+                                <div class="project-cont1 Html-project-cont1">
+                                    <h1>Html & Css Projects</h1>
+                                </div>
+                                <div class="slides">
+                                    <div>
+                                        <img src="img/prj8.png" alt="">
+                                        <h1>Spotify Website</h1>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis iusto id
+                                            quam praesentium vitae quasi, commodi, culpa reprehenderit quae aperiam
+                                            earum debitis nemo eveniet mollitia voluptate. Corporis ipsum veniam
+                                            perspiciatis.</p>
+                                    </div>
+
+                                    <div><img src="img/prj2.png" alt="">
+                                        <h1>hello</h1>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis iusto id
+                                            quam praesentium vitae quasi, commodi, culpa reprehenderit quae aperiam
+                                            earum debitis nemo eveniet mollitia voluptate. Corporis ipsum veniam
+                                            perspiciatis.</p>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                </div>
+                </section>
+                <!-- project end -->
+                <!-- contect section start  -->
+                <section class="hero-contenor9" id="contect">
+                    <div class="contect-hero">
+                        <div class="project-hero services-hero-row">
+                            <a href="#">
+                                <span> Contect </span>
+                            </a>
+                            <div class="project-hero-animation-slide services-hero-text-slide">
+                                <div class="project-hero-animation-slide-text services-hero-text">
+                                    <ul>
+                                        <li>
+                                            ⌘ Complete the form to send your message—I'll
+                                            definitely get in touch with you! Let's connect and
+                                            discuss how I can assist you with your project or
+                                            answer any inquiries you have. ⌘
+                                        </li>
+                                        <li>
+                                            Complete the form to send your message—I'll definitely
+                                            get in touch with you! Let's connect and discuss how I
+                                            can assist you with your project or answer any
+                                            inquiries you have.⌘
+                                        </li>
+                                        <li>
+                                            Complete the form to send your message—I'll definitely
+                                            get in touch with you! Let's connect and discuss how I
+                                            can assist you with your project or answer any
+                                            inquiries you have. ⌘
+                                        </li>
+                                        <li>
+                                            Complete the form to send your message—I'll definitely
+                                            get in touch with you! Let's connect and discuss how I
+                                            can assist you with your project or answer any
+                                            inquiries you have. ⌘
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="conect-form">
+                            <div class="contect-submit">
+                                <form action="">
+                                    <input type="text" placeholder="Name" id="nameInp" />
+                                    <br />
+                                    <input type="email" placeholder="Email" required id="emailInp" />
+                                    <br />
+                                    <textarea name="" id="textareaInp" cols="30" rows="10"
+                                        placeholder="Massage"></textarea>
+                                    <br />
+                                    <button class="submit-btn" id="submit-btn">Submit</button>
+                                </form>
+                            </div>
+                            <div class="contect-addrase">
+                                <a href="#">
+                                    <span> Address </span>
+                                </a>
+                                <div class="ad-contect">
+                                    <div class="top-ad-contect">
+                                        <div class="top-ad-contect-icon">
+                                            <i class="fa-regular fa-map"></i>
+                                        </div>
+                                        <div class="top-ad-contect-titel">
+                                            <h3>Visit Me</h3>
+                                            <p>Shiddharth Nager Nera-International Airport</p>
+                                            <span>Jaipur-Rajasthan</span>
+                                        </div>
+                                        <div class="ad-border1"></div>
+                                    </div>
+                                    <div class="top-ad-contect">
+                                        <div class="top-ad-contect-icon">
+                                            <i class="fa-regular fa-envelope"></i>
+                                        </div>
+                                        <div class="top-ad-contect-titel">
+                                            <h3>Contact Info</h3>
+                                            <p>agg99011@gmail.com</p>
+                                        </div>
+                                        <div class="ad-border2"></div>
+                                    </div>
+                                    <!-- <div class="bottom-ad-contect">
+                                            <div></div>
+                                            <div></div>
+                                        </div> -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- contect section end -->
+                <!-- foter  -->
+                <footer>
+                    <div>© 2024 Code W☘️th Sky. All rights reserved.</div>
+                </footer>
+                <!-- foter  -->
+            </div>
+        </div>
+        </div>
+    </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="pr-slide.js"></script>
+    <script src="downlodCv.js"></script>
+    <script src="ContectData.js"></script>
+    <script src="menu-open.js"></script>
+</body>
+
+</html>

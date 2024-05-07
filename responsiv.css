@@ -6,6 +6,10 @@
   }.show{
     display: block;
   }
+  .content {
+    padding: 0px !important;
+    gap: 12px;
+  }
   .left-content {
     width: 36%;
     height: 100vh;
@@ -73,8 +77,9 @@
     display: none;
   }
   .right-content {
-    width: 70%;
+    max-width: 70%;
     height: 100vh;
+    /* margin-right: 10px;  */
   }
   .hero-row1 {
     display: block;
@@ -330,5 +335,39 @@
 }
 .tesmonial-form textarea{
   width: 250px;
+}
+
+
+/* projects responsiv  */
+
+.slides div{
+  padding: 0px !important;
+}
+.slick-initialized .slick-slide{
+  margin-top: 25px;
+}
+.project-cont1{
+  font-size: 20px !important;
+}
+.project-cont1::before{
+  font-size: 29px !important;
+  top: 60px;
+  /* left: -300px; */
+  transition: 1s;
+  line-height: 30px;
+}
+.project-cont1 h1{
+  top: -25px !important;
+  right: 300px;
+  transition: 0.7s;
+  line-height: 30px;
+}
+.project-cont:hover .project-cont1::before {
+  top: -80px;
+  transition: 1s;
+}
+.project-cont:hover .project-cont1 h1{
+  transition: 0.7s;
+  right: 0px;
 }
 }

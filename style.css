@@ -681,6 +681,10 @@ i:hover {
   border-color: #0098e4;
   transition: 1s;
 }
+.project-hero-imges-cont a{
+  text-decoration: none;
+  color: inherit;
+}
 
 .project-hero-imges {
   width: 290px;
@@ -1177,4 +1181,111 @@ footer div {
 }
 .comming-soon-projects {
   filter: blur(10px);
+}
+
+
+
+/* projects html style  */
+.project-contenor2{
+  width: 100%;
+  height: 100%;
+}
+
+.project-cont{
+  display: block;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.project-cont1{
+  font-size: 30px;
+  color: #0098e4;
+  /* border: 1px solid red; */
+  transition: 0.5s;
+  overflow: hidden;
+  cursor: pointer;
+  backdrop-filter: blur();
+  border: 0.75px solid rgba(251, 251, 251, 0.1);
+}
+.project-cont1 h1{
+  position: relative;
+  top: 80px;
+  transition: 0.5s;
+}
+
+.project-cont1::before{
+  content: 'Freelancing project';
+  color: #fff;
+  font-size: 45px;
+  font-weight: 600;
+  margin-block-start: 0.83em;
+  margin-block-end: 0.83em;
+  position: relative;
+  top: 56px;
+  transition: top 0.3s ease;
+}
+.project-cont:hover h1{
+  top: 0px;
+}
+.project-cont:hover .project-cont1::before {
+  top: -50px;
+}
+.slides div{
+  padding: 10px 20px;
+}
+.slides img{
+  width: 100%;
+  height: 400px;
+}
+.slick-prev:before, .slick-next:before {
+  font-size: 35px !important;
+}
+.slick-prev{
+  left: 60px !important;
+  z-index: 999 !important;
+}
+.slick-next{
+  right: 40px !important;
+  z-index: 999 !important;
+}
+.JavaScript-project-cont1::before{
+  content: 'JavaScript Projects';
+  color: #fff;
+  font-size: 45px;
+  font-weight: 600;
+  margin-block-start: 0.83em;
+  margin-block-end: 0.83em;
+  position: relative;
+  top: 56px;
+  transition: top 0.3s ease;
+}
+.project-cont:hover .JavaScript-project-cont1::before {
+  top: -50px;
+}
+.Bootstarap-project-cont1::before{
+  content: 'Bootstarap Projects';
+  color: #fff;
+  font-size: 45px;
+  font-weight: 600;
+  margin-block-start: 0.83em;
+  margin-block-end: 0.83em;
+  position: relative;
+  top: 56px;
+  transition: top 0.3s ease;
+}
+.project-cont:hover .Bootstarap-project-cont1::before {
+  top: -50px;
+}
+.Html-project-cont1::before{
+  content: 'Html & Css Projects';
+  color: #fff;
+  font-size: 45px;
+  font-weight: 600;
+  margin-block-start: 0.83em;
+  margin-block-end: 0.83em;
+  position: relative;
+  top: 56px;
+  transition: top 0.3s ease;
+}
+.project-cont:hover .Html-project-cont1::before {
+  top: -50px;
 }
