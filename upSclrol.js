@@ -2,8 +2,9 @@ var scrollToTopButton = document.getElementById('scrollToTopButton');
 var scrollToTopbtnContent = document.querySelector('#scrolRotat');
 var rightContent = document.querySelector('.right-content');
 
-rightContent.addEventListener('scroll',function(){
+rightContent.addEventListener('scroll',function(e){
     var scrolme = rightContent.scrollTop;
+    console.log(e.target)
     if(rightContent.scrollTop>0){
         scrollToTopbtnContent.style.rotate = "0deg";
         scrollToTopButton.style.opacity = "1";
