@@ -191,7 +191,7 @@
     display: none;
   }
   .hero-section2 {
-    height: 5050px;
+    /* height: 5050px; */
     backdrop-filter: none;
     border:none;
     background: none;
